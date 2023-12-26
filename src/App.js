@@ -2,6 +2,8 @@ import Header from "./Components/Layout/Header";
 
 import { Fragment } from "react";
 
+import Meals from "./Components/Meals/Meals";
+
 function App() {
   return (
 
@@ -10,6 +12,11 @@ function App() {
     // </div>
     <Fragment>
       <Header/>
+      <main>
+        <Meals/>
+      </main>
+     
+      
     </Fragment>
     
   
