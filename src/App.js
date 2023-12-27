@@ -4,6 +4,8 @@ import { Fragment } from "react";
 
 import Meals from "./Components/Meals/Meals";
 
+import Cart from "./Components/Carts/Cart";
+
 function App() {
   return (
 
@@ -11,6 +13,7 @@ function App() {
     //   <h1>Lets start</h1>
     // </div>
     <Fragment>
+      <Cart/>
       <Header/>
       <main>
         <Meals/>
