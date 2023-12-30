@@ -6,6 +6,8 @@ import Meals from "./Components/Meals/Meals";
 
 import Cart from "./Components/Carts/Cart";
 
+import CartProvider from "./store/CartProvider";
+
 function App() {
   const [cartIsshown,setCartIsShown]= useState(false)
   const showCartHandler=()=>{
@@ -20,7 +22,7 @@ function App() {
     // <div>
     //   <h1>Lets start</h1>
     // </div>
-    <Fragment>
+    <CartProvider>
       { cartIsshown && <Cart onClose={hideCartHandler}/> }
       <Header onShowCart={showCartHandler}/>
       <main>
@@ -28,7 +30,7 @@ function App() {
       </main>
      
       
-    </Fragment>
+    </CartProvider>
     
   
   )

@@ -4,7 +4,7 @@ import classes from './Cart.module.css'
 const Cart=(props)=>{
     const cartitems = <ul  className={classes['cart-items']}>
         {[{id:'1254',Itemname:"sudhamilk",cost:"30rs"}].map((item)=><li>{item.Itemname}</li>)}</ul> 
-    return <Modal>
+    return <Modal onClose={props.onClose}>
         {cartitems}
         <div className={classes.total}>
             <span>Total Amount</span>
